@@ -17,3 +17,12 @@
 
 - [内部类](./语言语法/内部类.md)
 - [AutoCloseable 接口](./语言语法/AutoCloseable接口.md)
+
+#### 设计模式
+
+- [单例模式](./单例模式.md)
+- [原型模式](./原型模式.md)
+
+#### 集合框架
+
+- [HashMap 和 ConcurrentHashMap 计算下标逻辑](./集合框架/HashMap和ConcurrentHashMap计算下标逻辑.md)
