@@ -2,7 +2,7 @@
 
 ### 什么时候触发 Full GC？
 
-- **调用 `System.gc()`**。这种方式应避免，可以通过启动参数 `-XX:+DisableExplictGC` 来忽略这种调用。
+- **调用 `System.gc()`**。这种方式应避免，可以通过启动参数 `-XX:+DisableExplicitGC` 来忽略这种调用。
 
 - **老年代空间不足**。新生代对象转入、创建大对象大数组直接晋升到老年代，发现老年代空间不足，触发 Full GC。所以避免使用大对象、大数组就显得非常重要。
 - **CMS 的 Concurrent Mode Failure 和 Promotion Failed**。
