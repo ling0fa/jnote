@@ -10,8 +10,8 @@
 - `Serial Old（MSC）` 是 Mark Sweep Compact 的意思，使用单线程，回收时全部工作线程挂起。
 - `Parallel Old` 使用多线程，回收时全部工作线程挂起。
 
-- `-XX:+UseSerialGC` is `Serial` + `Serial Old`.
-- `-XX:+UseConcMarkSweepGC` is `ParNew` + `CMS` + `Serial Old`。 大多时候是由 CMS 回收老年代，当并发回收失败后，才使用 Serial Old 来回收。 
-- `-XX:+UseParallelGC` is `Parallel Scavenge` + `Serial Old`。
-- `-XX:+UseParNewGC` is `ParNew` + `Serial Old`。
-- `-XX:+UseParallelOldGC` is `Parallel Scavenge` + `Parallel Old`。
+- `-XX:+UseSerialGC` = `Serial` + `Serial Old`.
+- `-XX:+UseConcMarkSweepGC` = `ParNew` + `CMS` + `Serial Old`。 大多时候是由 CMS 回收老年代，当并发回收失败后，才使用 Serial Old 来回收。 
+- `-XX:+UseParallelGC` = `Parallel Scavenge` + `Serial Old`。
+- `-XX:+UseParNewGC` = `ParNew` + `Serial Old`。
+- `-XX:+UseParallelOldGC` = `Parallel Scavenge` + `Parallel Old`。
